@@ -1,0 +1,115 @@
+/* Global & layout */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  background: #FFFFFF;
+  color: #555555;
+  line-height: 1.6;
+}
+header {
+  background: #E89EB8;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  list-style: none;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero section */
+.fullscreen-section {
+  height: 100vh;
+  background: #F9F9F9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.fullscreen-section h1 {
+  color: #E89EB8;
+  margin-bottom: 20px;
+}
+.btn {
+  background: #E89EB8;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.btn:hover {
+  background: #D17CA0;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+h2 {
+  margin-bottom: 20px;
+  color: #E89EB8;
+  text-align: center;
+}
+
+/* Login form */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #D3D3D3;
+  border-radius: 4px;
+}
+input[type="submit"] {
+  background: #E89EB8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background: #D17CA0;
+}
+
+/* Products gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.product {
+  background: #FFFFFF;
+  border: 1px solid #D3D3D3;
+  padding: 15px;
+  width: calc(50% - 40px);
+  text-align: center;
+}
+.product img {
+  max-width: 100%;
+}
+
+/* Footer */
+footer {
+  background: #F0F0F0;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
